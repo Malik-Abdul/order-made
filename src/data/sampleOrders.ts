@@ -1,6 +1,6 @@
 const sampleOrders = {
   daraz: {
-    logo: "/logos/daraz.png",
+    logo: "/logo/daraz.png",
     orders: [
       {
         orderId: 101,
