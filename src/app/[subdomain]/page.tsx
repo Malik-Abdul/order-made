@@ -1,18 +1,8 @@
-import { cookies } from "next/headers";
 import sampleOrders from "@/data/sampleOrders";
 type CompanyData = {
   logo: string;
   orders: { id: number; name: string }[];
 };
-async function fetchData(subdomain: string): Promise<CompanyData> {
-  return {
-    logo: `/logo/${subdomain}.png`,
-    orders: [
-      { id: 1, name: "Order One" },
-      { id: 2, name: "Order Two" },
-    ],
-  };
-}
 
 export default async function OrderPage({ params }: { params: string }) {
   const { subdomain } = params;
